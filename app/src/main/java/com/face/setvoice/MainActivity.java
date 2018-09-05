@@ -48,6 +48,7 @@ public class MainActivity extends Activity implements SeekBar.OnSeekBarChangeLis
             @Override
             public void onClick(View view) {
 
+
                 startActivity(new Intent(MainActivity.this,WelcomeActivity.class));
             }
         });
