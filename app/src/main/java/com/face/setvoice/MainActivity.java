@@ -2,16 +2,21 @@ package com.face.setvoice;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.media.AudioManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.SeekBar;
 import android.widget.Switch;
 import android.widget.TextView;
+
+import com.face.setvoice.allsensor.MainSensorActivity;
+import com.face.setvoice.allsensor.WelcomeActivity;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -24,10 +29,12 @@ public class MainActivity extends Activity implements SeekBar.OnSeekBarChangeLis
     private TextView textView;
     TextView textView2;
     Switch switch1;
+    Button bt_sensor;
     private static final String TAG = "DEV_TEST";
     String commod1 = "echo 1 > /sys/devices/platform/dev_ctl/relay_status"+"\n";
     String commod0 = "echo 0 > /sys/devices/platform/dev_ctl/relay_status"+"\n";
     AudioManager am;
+    private boolean shortPress = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +43,16 @@ public class MainActivity extends Activity implements SeekBar.OnSeekBarChangeLis
         seekBar.setOnSeekBarChangeListener(this);
         textView = findViewById(R.id.text1);
         textView2 = findViewById(R.id.text2);
+        bt_sensor = findViewById(R.id.bt_sensor);
+        bt_sensor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(MainActivity.this,WelcomeActivity.class));
+            }
+        });
         switch1 =  findViewById(R.id.switch_1);
+
         switch1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 
             @Override
@@ -190,7 +206,44 @@ public class MainActivity extends Activity implements SeekBar.OnSeekBarChangeLis
             Log.i("QQQQ", "----------phone--onKeyDown---keycode-----------" + keyCode);
             return true;
         }
-        return false;
+
+        if (keyCode == 445) {
+            if(event.getAction() == KeyEvent.ACTION_DOWN) {
+                event.startTracking(); //只有执行了这行代码才会调用onKeyLongPress
+                if (event.getRepeatCount() == 0) {
+                    shortPress = true;//短按事件逻辑
+                }
+                return true;
+            }
+        }
+
+        if (keyCode == 446) {
+            if(event.getAction() == KeyEvent.ACTION_DOWN) {
+                event.startTracking(); //只有执行了这行代码才会调用onKeyLongPress
+                if (event.getRepeatCount() == 0) {
+                    shortPress = true;//短按事件逻辑
+                }
+                return true;
+            }
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
+    @Override
+    public boolean onKeyLongPress(int keyCode, KeyEvent event) {
+        if (keyCode == 445) {
+            //长按事件的逻辑
+            Log.i("QQQQ", "-----onKeyLongPress---keycode------------------" + keyCode);
+            textView2.setText("onKeyLongPress---keycode-----" + keyCode);
+            return true;
+        }
+        if (keyCode == 446) {
+            //长按事件的逻辑
+            Log.i("QQQQ", "-----onKeyLongPress---keycode------------------" + keyCode);
+            textView2.setText("onKeyLongPress---keycode-----" + keyCode);
+            return true;
+        }
+        return false;
+
+    }
 }

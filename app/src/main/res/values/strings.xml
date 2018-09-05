@@ -1,3 +1,40 @@
 <resources>
     <string name="app_name">setVoice</string>
+    <string name="action_settings">退出</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="look">向左滑动查看本机所有传感器</string>
+    <string name="exit">退出</string>
+    <string name="back">返回</string>
+    <string name="AcceleX">X方向上加速度：</string>
+    <string name="AcceleY">Y方向上加速度：</string>
+    <string name="AcceleZ">Z方向上加速度：</string>
+    <string name="orientationX">X方向的角度：</string>
+    <string name="orientationY">Y方向的角度：</string>
+    <string name="orientationZ">Z方向的角度：</string>
+    <string name="orientationA">手机头部指向：</string>
+    <string name="orientationB">手机顶部或尾部翘起的角度：</string>
+    <string name="orientationC">手机左侧或右侧翘起的角度：</string>
+    <string name="MagneticX">X方向的磁场分量：</string>
+    <string name="MagneticY">Y方向的磁场分量：</string>
+    <string name="MagneticZ">Z方向的磁场分量：</string>
+    <string name="GyroscopeX">沿X方向旋转角速度：</string>
+    <string name="GyroscopeY">沿Y方向旋转角速度：</string>
+    <string name="GyroscopeZ">沿Z方向旋转角速度：</string>
+    <string name="Light">光线强度：</string>
+    <string name="LightState">当前等效状态：</string>
+    <string name="PressureTextViewX">周围空气压力：</string>
+    <string name="TemperatureTextViewX">设备温度：</string>
+    <string name="AmbientTemperatureTextViewX">环境温度：</string>
+    <string name="ProximityTextViewX">设备与对象间距离：</string>
+    <string name="GravityX">沿X方向重力加速度：</string>
+    <string name="GravityY">沿Y方向重力加速度：</string>
+    <string name="GravityZ">沿Z方向重力加速度：</string>
+    <string name="LinearAccelerometerX">沿X方向线性加速度：</string>
+    <string name="LinearAccelerometerY">沿Y方向线性加速度：</string>
+    <string name="LinearAccelerometerZ">沿Z方向线性加速度：</string>
+    <string name="RotationX">沿X方向旋转矢量：</string>
+    <string name="RotationY">沿Y方向旋转矢量：</string>
+    <string name="RotationZ">沿Z方向旋转矢量：</string>
+    <string name="welcome">welcome</string>
+
 </resources>

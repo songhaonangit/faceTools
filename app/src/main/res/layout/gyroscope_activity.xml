@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/GyroscopeTextViewX"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/GyroscopeX"
+        android:textColor="#0066CC"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/GyroscopeTextViewY"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/GyroscopeTextViewX"
+        android:textColor="#0066CC"
+        android:text="@string/GyroscopeY"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/GyroscopeTextViewZ"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/GyroscopeTextViewY"
+        android:textColor="#0066CC"
+        android:text="@string/GyroscopeZ"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -82,6 +82,12 @@
                 android:text="继电器开关"
                 android:textOff="OFF"
                 android:textOn="ON" />
+
+            <Button
+                android:id="@+id/bt_sensor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="传感器"/>
         </LinearLayout>
     </LinearLayout>
 

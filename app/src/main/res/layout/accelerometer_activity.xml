@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/accelerometerTextViewX"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/AcceleX"
+        android:textColor="#0066CC"
+        android:textSize="20sp" 
+        />
+
+    <TextView
+        android:id="@+id/accelerometerTextViewY"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accelerometerTextViewX"
+        android:text="@string/AcceleY"
+        android:textColor="#0066CC"
+        android:textSize="20sp" 
+        />
+
+    <TextView
+        android:id="@+id/accelerometerTextViewZ"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accelerometerTextViewY"
+        android:text="@string/AcceleZ"
+        android:textColor="#0066CC"
+        android:textSize="20sp" 
+        />
+
+
+
+
+</RelativeLayout>

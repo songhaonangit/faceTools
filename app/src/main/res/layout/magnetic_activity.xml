@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/MagneticTextViewX"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/MagneticX"
+        android:textColor="#0066CC"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/MagneticTextViewY"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MagneticTextViewX"
+        android:textColor="#0066CC"
+        android:text="@string/MagneticY"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/MagneticTextViewZ"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MagneticTextViewY"
+        android:textColor="#0066CC"
+        android:text="@string/MagneticZ"
+        android:textSize="20sp" />
+
+</RelativeLayout>

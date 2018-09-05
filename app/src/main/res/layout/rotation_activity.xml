@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/RotationTextViewX"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/RotationX"
+        android:textColor="#0066CC"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/RotationTextViewY"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RotationTextViewX"
+        android:text="@string/RotationY"
+        android:textColor="#0066CC"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/RotationTextViewZ"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RotationTextViewY"
+        android:text="@string/RotationZ"
+        android:textColor="#0066CC"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/orientationTextViewX"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/orientationX"
+        android:textColor="#0066CC"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/orientationTextViewY"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orientationTextViewX"
+        android:textColor="#0066CC"
+        android:text="@string/orientationY"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/orientationTextViewZ"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orientationTextViewY"
+        android:textColor="#0066CC"
+        android:text="@string/orientationZ"
+        android:textSize="20sp" />
+     <TextView
+        android:id="@+id/orientationTextViewA"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orientationTextViewZ"
+        android:textColor="#0066CC"
+        android:text="@string/orientationA"
+        android:textSize="20sp" />
+      <TextView
+        android:id="@+id/orientationTextViewB"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orientationTextViewA"
+        android:textColor="#0066CC"
+        android:text="@string/orientationB"
+        android:textSize="20sp" />
+       <TextView
+        android:id="@+id/orientationTextViewC"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orientationTextViewB"
+        android:textColor="#0066CC"
+        android:text="@string/orientationC"
+        android:textSize="20sp" />
+
+</RelativeLayout>

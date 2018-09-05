@@ -16,6 +16,81 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.face.setvoice.allsensor.WelcomeActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.face.setvoice.allsensor.MainSensorActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.face.setvoice.allsensor.ListViewActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.face.setvoice.allsensor.Accelerometer"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" >
+        </activity>
+         <activity
+            android:name="com.face.setvoice.allsensor.AmbientTemperature"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.face.setvoice.allsensor.Orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.face.setvoice.allsensor.Magnetic"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.face.setvoice.allsensor.Gyroscope"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.face.setvoice.allsensor.Light"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.face.setvoice.allsensor.Pressure"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.face.setvoice.allsensor.Temperature"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.face.setvoice.allsensor.Proximity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.face.setvoice.allsensor.Gravity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.face.setvoice.allsensor.LinearAccelerometer"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.face.setvoice.allsensor.Rotation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" >
+        </activity>
     </application>
 
 </manifest>
